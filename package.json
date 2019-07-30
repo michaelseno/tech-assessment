@@ -1,0 +1,32 @@
+{
+  "name": "m800-tech-assessment",
+  "version": "1.0.0",
+  "description": "This is a technical assessment project for QA applicants",
+  "main": "index.js",
+  "scripts": {
+    "install:server": "selenium-standalone install --drivers.chrome.version=2.43 --drivers.chrome.baseURL=https://chromedriver.storage.googleapis.com",
+    "start:server": "selenium-standalone start",
+    "stop:server": "pkill -f selenium-standalone",
+    "test": "mocha Suite/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelseno/tech-assessment.git"
+  },
+  "keywords": [
+    "technical",
+    "assessment"
+  ],
+  "author": "michaelseno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelseno/tech-assessment/issues"
+  },
+  "homepage": "https://github.com/michaelseno/tech-assessment#readme",
+  "dependencies": {
+    "mocha": "^6.2.0",
+    "webdriverio": "^4.10.0",
+    "selenium-standalone": "^6.16.0",
+    "chai": "^4.1.2"
+  }
+}
